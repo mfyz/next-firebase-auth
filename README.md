@@ -1,4 +1,4 @@
-## Next Firebase auth 
+## Next Firebase auth + Firestore
 
 Derivered From: https://github.com/gladly-team/next-firebase-auth
 

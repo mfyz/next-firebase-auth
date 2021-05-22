@@ -60,3 +60,17 @@ nav {
 		}
 	}
 }
+
+ul.books-list > li {
+	a.delete-book {
+		display: none;
+		color: red;
+		margin-left: 10px;
+	}
+
+	&:hover {
+		a.delete-book {
+			display: inline-block;
+		}
+	}
+}

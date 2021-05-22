@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
 	const { email, signOut } = authUser
 
 	return (
-		<div class="site-container">
+		<div className="site-container">
 			<nav>
 				<div className="user-area">
 					{email ? (
@@ -50,6 +50,9 @@ function MyApp({ Component, pageProps }) {
 					</Link>
 					<Link href="/user-static">
 						<a>User Page (Static)</a>
+					</Link>
+					<Link href="/books">
+						<a>Books (Firestore)</a>
 					</Link>
 				</div>
 			</nav>

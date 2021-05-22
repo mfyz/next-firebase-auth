@@ -1,0 +1,62 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, Roboto, Helvetica Neue, sans-serif;
+}
+
+a {
+	color: #4784EF;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.site-container {
+	width: 1000px;
+	margin: 50px auto;
+}
+
+nav {
+	position: relative;
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 20px;
+	margin-bottom: 50px;
+
+	& > .user-area {
+		float: right;
+		display: flex;
+	}
+
+	.links a {
+		margin-right: 30px;
+	}
+}
+
+// Firebae UI overrides
+.site-container {
+	#firebaseui_container {
+		* {
+			font-family: -apple-system, Roboto, Helvetica Neue, sans-serif;
+		}
+
+		& > .mdl-card {
+			border: 1px solid #cccccc;
+			border-radius: 15px;
+			box-shadow: 0 5px 30px rgba(0,0,0,0.05);
+		}
+
+		.firebaseui-label::after {
+			background-color: #4784EF;
+		}
+
+		.firebaseui-button.mdl-button--colored {
+			color: white;
+			background-color: #4784EF;
+			border-radius: 8px;
+		}
+	}
+}

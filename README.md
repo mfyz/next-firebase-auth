@@ -1,5 +1,7 @@
 ## Next Firebase auth 
+
 Derivered From: https://github.com/gladly-team/next-firebase-auth
+
 ⭐️ DEMO: https://next-firebase-auth-chi.vercel.app/
 
 ----

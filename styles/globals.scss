@@ -38,25 +38,57 @@ nav {
 
 // Firebae UI overrides
 .site-container {
+	.signInViaEmailForm {
+		width: 300px;
+		margin: 0 auto;
+
+		input[type=email] {
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			border: 1px solid #999999;
+		}
+
+		button {
+			width: 100%;
+			padding: 10px;
+			background-color: #4784EF;
+			border: 1px solid #4784EF;
+			color: white;
+			cursor: pointer;
+		}
+
+		.or {
+			text-align: center;
+			color: #aaaaaa;
+			margin: 30px;
+		}
+	}
+
 	#firebaseui_container {
 		* {
 			font-family: -apple-system, Roboto, Helvetica Neue, sans-serif;
 		}
 
 		& > .mdl-card {
-			border: 1px solid #cccccc;
-			border-radius: 15px;
-			box-shadow: 0 5px 30px rgba(0,0,0,0.05);
+			// border: 1px solid #cccccc;
+			// border-radius: 15px;
+			// box-shadow: 0 5px 30px rgba(0,0,0,0.05);
+			border: 0;
+			box-shadow: none;
 		}
 
 		.firebaseui-label::after {
 			background-color: #4784EF;
 		}
 
-		.firebaseui-button.mdl-button--colored {
-			color: white;
-			background-color: #4784EF;
-			border-radius: 8px;
+		.firebaseui-idp-button {
+			border-radius: 0;
+			box-shadow: none;
+		}
+
+		.firebaseui-idp-google {
+			border: 1px solid #cccccc;
 		}
 	}
 }

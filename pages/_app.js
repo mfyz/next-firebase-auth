@@ -12,15 +12,20 @@ initAuth()
 
 function MyApp({ Component, pageProps }) {
 	const authUser = useAuthUser()
-	const { email, signOut } = authUser
+	// console.log('--> authUser', authUser)
+	const { id, email, phoneNumber, signOut } = authUser
 
 	return (
 		<div className="site-container">
 			<nav>
 				<div className="user-area">
-					{email ? (
+					{id ? (
 						<>
-							<span>Signed in as {email}</span>
+							<span>
+								Signed in as&nbsp;
+									{email ? email : ''}
+									{!email && phoneNumber ? phoneNumber : ''}
+							</span>
 							&nbsp; &bull; &nbsp;
 							<a
 								onClick={() => {
@@ -40,7 +45,6 @@ function MyApp({ Component, pageProps }) {
 						</>
 					)}
 				</div>
-
 				<div className="links">
 					<Link href="/">
 						<a>Home</a>
